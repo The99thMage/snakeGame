@@ -159,12 +159,12 @@ function draw() {
   }
 
   //used for debugging
-  if(keyIsDown(32) && frameCount % speed === 0){
+  /*if(keyIsDown(32) && frameCount % speed === 0){
     window.size++;
     snakeBodyBit = new snakeBit(pastX[steps - window.size], pastY[steps - window.size]);
 
     snakeBody.push([snakeBodyBit, steps - window.size]);
-  }
+  }*/
 
   if(snakeBody.length > 1){
     if(snakeBody[0][0].body.position.x % 20 !== 0 || snakeBody[0][0].body.position.y % 20 !== 0){
