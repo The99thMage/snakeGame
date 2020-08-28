@@ -118,7 +118,7 @@ function draw() {
 
     console.log(snakeHead.body.position.y);
     if(snakeDirection === "right"){
-      if(snakeHead.body.position.x + 20 > 400){
+      if(snakeHead.body.position.x + 20 > 380){
         gamestate = "over";
       }else{
         Matter.Body.setPosition(snakeHead.body, {x: snakeHead.body.position.x + 20, y: snakeHead.body.position.y});
@@ -139,7 +139,7 @@ function draw() {
       }
     }
     if(snakeDirection === "down"){
-      if(snakeHead.body.position.y + 20 > 400){
+      if(snakeHead.body.position.y + 20 > 380){
         gamestate = "over";
       }else{
         Matter.Body.setPosition(snakeHead.body, {x: snakeHead.body.position.x, y: snakeHead.body.position.y + 20});
